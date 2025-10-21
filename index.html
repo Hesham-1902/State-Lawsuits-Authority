@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مجلة هيئة قضايا الدولة</title>
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    
+    <link rel="icon" href="logo.png" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -17,21 +19,19 @@
                 <div class="header-content">
                     <div class="logo-section">
                         <div class="logo-container">
-                            <img src="logo.jpg" alt="شعار هيئة قضايا الدولة" class="logo">
+                            <img src="logo.png" alt="شعار هيئة قضايا الدولة" class="logo">
                             <div class="logo-text">
-                                <h1 class="magazine-title">مجلة    </h1>
-                                <style>
-                                    h1.magazine-title {
-                                        color: #1a3a5c;
-                                        transform: translateX(-20px);
-                                        margin-left: -100px;
-                                    }
-                                </style>
-                                <h4 class="org-name">هيئة قضايا الدولة</h4>
-                                
+                                <h1 class="magazine-title">مجلة</h1>
+                                <h2 class="org-name">هيئة قضايا الدولة</h2>
                             </div>
+
+                            <a href="#" class="member-login btn btn-outline" id="loginBtn" aria-haspopup="dialog" aria-controls="loginModal">
+                                <i class="fas fa-sign-in-alt"></i>
+                                دخول الأعضاء
+                            </a>
                         </div>
                     </div>
+
                     <div class="header-features">
                         <div class="feature-item">
                             <i class="fas fa-balance-scale"></i>
@@ -56,6 +56,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         
@@ -93,15 +94,12 @@
                     <li><a href="#" class="nav-link"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <div class="search-container">
-                        <input type="text" placeholder="ابحث في المجلة..." class="search-input">
-                        <button class="search-btn"><i class="fas fa-search"></i></button>
-                    </div>
-                    <div class="auth-buttons">
-                        <button class="btn btn-outline" id="loginBtn"><i class="fas fa-sign-in-alt"></i> دخول الأعضاء</button>
+                    <div class="search-container" role="search">
+                        <input type="text" placeholder="ابحث في المجلة..." class="search-input" aria-label="ابحث في المجلة">
+                        <button class="search-btn" aria-label="بحث"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="mobile-menu-toggle">
+                <div class="mobile-menu-toggle" aria-label="قائمة الجوال">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
@@ -112,23 +110,25 @@
         <div class="container">
             <div class="main-layout-grid">
 
-                <aside class="sidebar sidebar-left">
-                    <div class="sidebar-card about-card">
-                        <div class="about-header">
-                            <i class="fas fa-book-open"></i>
-                            <h3>نبذة عن المجلة</h3>
+                <aside class="sidebar sidebar-right">
+                    <div class="sidebar-card president-card">
+                        <div class="president-header">
+                            <div class="president-avatar">
+                                <img src="logo11.png" alt="صورة رئيس الهيئة">
+                            </div>
+                            <div class="president-info">
+                                <h3>كلمة السيد المستشار الدكتور الوزير</h3>
+                                <p>رئيس هيئة قضايا الدولة</p>
+                                <span>المستشار الدكتور حسين مدكور</span>
+                            </div>
                         </div>
-                        <div class="about-content">
-                            <p>مجلة "قضايا الدولة" تعد تاريخياً من أعرق المجلات القانونية والقضائية في مصر والعالم العربي، وقد أسهمت في نشر الفكر القانوني وتطوير الثقافة القانونية.</p>
-                            <p>تلتزم المجلة بتقديم أبحاث ودراسات قانونية رصينة واجتهادات قضائية حديثة، لتكون مرجعاً موثوقاً للباحثين والقضاة والمحامين.</p>
-                            <p>ونأمل أن تظل هذه المجلة منارة للعلم والمعرفة، ومساهماً فاعلاً في إرساء دعائم العدالة وسيادة القانون.</p>
+                        <div class="president-content">
+                            <p>إن العدالة هي الركيزة الأساسية في بناء المجتمعات، ويُعد القانون أداتها الفاعلة في تحقيقها وصونها. وإيمانا من هيئة قضايا الدولة بأهمية دورها فإنها تواصل جهودها في تطوير المنظومة التشريعية لمواكبة تطورات المجتمع المعاصر.</p>
+                            <p>ومن هذا المنطلق يأتي إطلاق الموقع الإلكتروني لمجلة "قضايا الدولة" ليكون منارة علمية وثقافية تسهم في نشر الوعي القانوني، وتعزيز سبل الوصول إلى أحدث التشريعات والأبحاث والاجتهادات القضائية التي تسهم في تشكيل مستقبل العدالة.</p>
+                            <p>وإننا نؤكد التزامنا بأن تظل المجلة منارة علمية وثقافية تسهم في نشر الوعي القانوني، وتعزيز سبل الوصول إلى أحدث التشريعات والأبحاث والاجتهادات القضائية التي تسهم في تشكيل مستقبل العدالة. كما نؤكد التزامنا بأن تظل المجلة منبرًا رائدًا يخدم رجال القانون والباحثين والمهتمين بالشأن القضائي، دعمًا لمسيرة الحق وسيادة القانون.</p>
+                            <p>والله الموفق</p>
                         </div>
-                        <ul class="about-links">
-                            <li><a href="#">رئيس هيئة قضايا الدولة</a></li>
-                            <li><a href="#">نائب رئيس الهيئة</a></li>
-                            <li><a href="#">رئيس قسم المجلة</a></li>
-                            <li><a href="#">رئيس التحرير</a></li>
-                        </ul>
+                        <a href="#" class="read-more">قراءة الكلمة كاملة <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </aside>
 
@@ -139,10 +139,16 @@
                         <div class="container">
                             <div class="hero-content">
                                 <div class="magazine-issue">
-                                    <span class="issue-badge">العدد الحالي</span>
                                     <h1 class="magazine-title">مجلة هيئة قضايا الدولة</h1>
                                     <h2 class="issue-title">العدد ٢٣ - أكتوبر ٢٠٢٥</h2>
-                                    <p class="issue-description">مجلة قانونية محكمة تعنى بالقضايا والدراسات القانونية، تصدر عن الهيئة العامة لقضايا الدولة</p>
+                                    
+                                    <blockquote class="issue-quote">
+                                        "علمنا هذا رأى فمن جاءنا بأحسن منه قبلناه "
+                                        <cite>ابو حنيفة</cite>
+                                    </blockquote>
+                                    
+                                    <p class="issue-description">تصدر عن الادارة العامة لهيئة قضايا الدولة</p>
+                                    
                                     <div class="hero-actions">
                                         <button class="btn btn-gold"><i class="fas fa-book-open"></i> اقرأ العدد الكامل</button>
                                         <button class="btn btn-outline-light"><i class="fas fa-download"></i> تحميل PDF</button>
@@ -153,7 +159,7 @@
                                         <div class="cover-design">
                                             <div class="cover-header">
                                                 <div class="cover-logo">
-                                                    <img src="logo.jpg" alt="شعار الهيئة">
+                                                    <i class="fas fa-balance-scale"></i>
                                                 </div>
                                                 <div class="cover-title">
                                                     <h3>مجلة هيئة قضايا الدولة</h3>
@@ -161,7 +167,8 @@
                                                 </div>
                                             </div>
                                             <div class="cover-symbol">
-                                                <i class="fas fa-balance-scale"></i>
+                                                <img src="logo.png" alt="غلاف المجلة" style="width: 150px; height: auto;">
+                                                
                                             </div>
                                             <div class="cover-highlights">
                                                 <h4>أبرز العناوين</h4>
@@ -203,13 +210,17 @@
                                         <h3>أخبار الهيئة</h3>
                                         <p>فعاليات وأنشطة الهيئة</p>
                                     </a>
-                                    <a href="#" class="quick-card">
-                                        <div class="quick-icon">
-                                            <i class="fas fa-landmark"></i>
-                                        </div>
-                                        <h3>الذاكرة القضائية</h3>
-                                        <p>أرشيف تاريخي للقضاء المصري</p>
-                                    </a>
+
+                                    <div class="quick-card">
+                                        <a href="#" class="quick-card-link" aria-label="الذاكرة القضائية">
+                                            <div class="quick-icon">
+                                                <i class="fas fa-landmark"></i>
+                                            </div>
+                                            <h3>الذاكرة القضائية</h3>
+                                            <p>أرشيف تاريخي للقضاء المصري</p>
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -363,7 +374,7 @@
                                         </div>
                                         <div class="archive-info">
                                             <h4>أعداد عام 2024</h4>
-                                            <p>٦ أعداد صادرة</p>
+                                            <p>4 أعداد صادرة</p>
                                             <a href="#" class="btn btn-outline">استعرض الأعداد</a>
                                         </div>
                                     </div>
@@ -376,7 +387,7 @@
                                         </div>
                                         <div class="archive-info">
                                             <h4>أعداد عام 2023</h4>
-                                            <p>٦ أعداد صادرة</p>
+                                            <p>4 أعداد صادرة</p>
                                             <a href="#" class="btn btn-outline">استعرض الأعداد</a>
                                         </div>
                                     </div>
@@ -389,7 +400,7 @@
                                         </div>
                                         <div class="archive-info">
                                             <h4>أعداد عام 2022</h4>
-                                            <p>٦ أعداد صادرة</p>
+                                            <p>4 أعداد صادرة</p>
                                             <a href="#" class="btn btn-outline">استعرض الأعداد</a>
                                         </div>
                                     </div>
@@ -400,24 +411,23 @@
 
                 </div> 
 
-                <aside class="sidebar sidebar-right">
-                    <div class="sidebar-card president-card">
-                        <div class="president-header">
-                            <div class="president-avatar">
-                                <img src="logo11.png" alt="صورة رئيس الهيئة">
-                            </div>
-                            <div class="president-info">
-                                <h3>كلمة السيد المستشار الدكتور الوزير</h3>
-                                <p>رئيس هيئة قضايا الدولة</p>
-                                <span>المستشار / حسين السيد العربي</span>
-                            </div>
+                <aside class="sidebar sidebar-left">
+                    <div class="sidebar-card about-card">
+                        <div class="about-header">
+                            <img src="logo.png" alt="شعار هيئة قضايا الدولة" class="sidebar-logo">
+                            <h3>كلمة السيد الاستاذ المستشار/ نائب رئيس هيئة قضايا الدولة- رئيس قسم المجلة ومدير التحرير</h3>
                         </div>
-                        <div class="president-content">
-                            <p>إن العدالة هي الركيزة الأساسية في وجدان الإنسانية وهي الغاية النبيلة التي تتطلع إليها كافة القوانين الوضعية، وتضعها مجتمعاتنا في مقدمة أولوياتها إيماناً منها بأنها قوام بقائها وتقدمها.</p>
-                            <p>ومن هذا المنطلق، يأتي إطلاق الموقع الإلكتروني لمجلة "قضايا الدولة" كخطوة هامة في تطوير المنظومة القضائية وتعزيز قيم الشفافية، وتسهيلاً للوصول إلى المعلومة القانونية.</p>
-                            <p>نأمل أن يكون هذا الصرح القانوني إضافة حقيقية للفكر القانوني، وأن يساهم في نشر الوعي القانوني وتطوير التشريعات والاجتهادات القضائية.</p>
+                        <div class="about-content">
+                            <p>ظلت مجلة "قضايا الدولة" عبر تاريخها منبرًا علميًا وقانونيًا مميزا، احتضن البحوث والدراسات القانونية وساهم في نشر العلم والمعرفة وتعزيز الثقافة القانونية.</p>
+                            <p>واستمرارًا لهذا النهج الرائد، يسعدنا أن نعلن عن إطلاق الموقع الإلكتروني للمجلة، ليكون نافذة جديدة تسهم في نشر الوعي القانوني، تيسر الوصول إلى محتواها لكل المهتمين بالقانون والعدالة.</p>
+                            <p>نؤكد عزمنا على أن يظل هذا الموقع منصة متجددة، تدعم رسالتنا العلمية وتخدم رجال القانون والقضاء بكل أمانة وجدية.</p>
                         </div>
-                        <a href="#" class="read-more">قراءة الكلمة كاملة <i class="fas fa-arrow-left"></i></a>
+                        <div class="signature">
+                            المستشار <br>
+                            ايمن هلال <br>
+                            نائب رئيس هيئة قضايا الدولة <br>
+                            رئيس قسم المجلة ومدير التحرير
+                        </div>
                     </div>
                 </aside>
 
@@ -432,10 +442,10 @@
                 <div class="footer-content">
                     <div class="footer-section">
                         <div class="footer-logo">
-                            <img src="logo.jpg" alt="شعار الهيئة" class="logo">
+                            <img src="logo.png" alt="شعار الهيئة" class="logo">
                             <div class="logo-text">
                                 <h3>هيئة قضايا الدولة</h3>
-                                <p>الهيئة العامة لقضايا الدولة</p>
+                                <p>الادارة العامة   </p>
                             </div>
                         </div>
                         <p class="footer-description">هيئة قضايا الدولة هي الجهة المختصة بالنيابة عن الدولة فيما يرفع منها أو عليها من دعاوى، والدفاع عنها أمام جهات القضاء.</p>
@@ -472,9 +482,9 @@
                     <div class="footer-section">
                         <h4 class="footer-title">معلومات التواصل</h4>
                         <div class="contact-info">
-                            <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع القضاء - مدينة نصر - القاهرة</p>
-                            <p><i class="fas fa-phone"></i> الهاتف: 0223456789</p>
-                            <p><i class="far fa-envelope"></i> البريد الإلكتروني: info@scd.gov.eg</p>
+                            <p><i class="fas fa-map-marker-alt"></i> العنوان 42 ش جامعة الدول العربية المهندسين الجيزه 
+                                المنيل</p>
+                            <p><i class="far fa-envelope"></i> البريد الإلكتروني: magazine@sla.gov.eg</p>
                             <p><i class="fas fa-globe"></i> الموقع الإلكتروني: www.scd.gov.eg</p>
                         </div>
                     </div>
@@ -496,11 +506,11 @@
         </div>
     </footer>
 
-    <div class="modal" id="loginModal">
+    <div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle" hidden>
         <div class="modal-content">
             <div class="modal-header">
-                <h2>دخول الأعضاء</h2>
-                <button class="close-modal">&times;</button>
+                <h2 id="loginModalTitle">دخول الأعضاء</h2>
+                <button class="close-modal" aria-label="إغلاق">&times;</button>
             </div>
             <div class="modal-body">
                 <form class="auth-form">
@@ -532,6 +542,64 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <script>
+        // بسيط: إذا كان script.js لا يتعامل مع #loginBtn، هذا السكربت يفتح المودال.
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginBtn = document.getElementById('loginBtn');
+            const loginModal = document.getElementById('loginModal');
+            const closeModal = document.querySelector('.close-modal');
+
+            if (loginBtn && loginModal) {
+                loginBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    loginModal.hidden = false;
+                    loginModal.classList.add('active');
+                });
+            }
+            if (closeModal && loginModal) {
+                closeModal.addEventListener('click', function () {
+                    loginModal.hidden = true;
+                    loginModal.classList.remove('active');
+                });
+            }
+            // close modal on backdrop click
+            if (loginModal) {
+                loginModal.addEventListener('click', function (e) {
+                    if (e.target === loginModal) {
+                        loginModal.hidden = true;
+                        loginModal.classList.remove('active');
+                    }
+                });
+            }
+
+            // Tabs functionality
+            const tabHeaders = document.querySelectorAll('.tab-header');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    // Remove active class from all
+                    tabHeaders.forEach(h => h.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked header and corresponding content
+                    header.classList.add('active');
+                    const tabId = header.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+
+    </body>
 </html>
